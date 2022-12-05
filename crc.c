@@ -70,7 +70,7 @@ printf("\nErroneous data : %s\n",t);
 
 crc();
 for( e=0;e<N-1 && cs[e]!=1;e++);
-if(cs[e-1]){
+if(e<N-1){
     printf("\n CRC checksum is : %s",cs);
     printf("\n error detected");
 
